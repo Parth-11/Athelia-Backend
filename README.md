@@ -1,11 +1,5 @@
 # Athelia-Backend
 
-# ModLib
-
-ModLib is a modular Go-based application that demonstrates a clean separation of concerns across client, server, and internal libraries. It includes CLI tools, authentication logic, and reusable packages.
-
----
-
 ## 📁 Project Structure
 ```
 .
