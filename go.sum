@@ -250,6 +250,8 @@ go.uber.org/multierr v1.6.0/go.mod h1:cdWPpRnG4AhwMwsgIHip0KRBQjJy5kYEpYjJxpXp9i
 go.uber.org/zap v1.18.1/go.mod h1:xg/QME4nWcxGxrpdeYfq7UvYrLh66cuVKdrbD1XF/NI=
 gofr.dev v1.40.0 h1:3Zcb5ekX4rmmQaDyL84/U1jO3PvtPK56WLSg2wmf3Qc=
 gofr.dev v1.40.0/go.mod h1:SRBQyPP/zI3DTvipOYBNb2ovfIyIhOE1wyf4HaBq/x4=
+gofr.dev/pkg/gofr/datasource/mongo v0.4.0 h1:HtTjDSVIueBlQd4lueRhau/KPnQYQgwDGotQ6P4/xYk=
+gofr.dev/pkg/gofr/datasource/mongo v0.4.0/go.mod h1:AEteMp7XGVwpYNlrjXl0WEaR2ft32ycvMl8NXwzmqwc=
 golang.org/x/crypto v0.0.0-20190308221718-c2843e01d9a2/go.mod h1:djNgcEr1/C05ACkg1iLfiJU5Ep61QUkGW8qpdssI0+w=
 golang.org/x/crypto v0.0.0-20191011191535-87dc89f01550/go.mod h1:yigFU9vqHzYiE8UmvKecakEJjdnWj3jj499lnFckfCI=
 golang.org/x/crypto v0.0.0-20200622213623-75b288015ac9/go.mod h1:LzIPMQfyMNhhGPhUkYOs5KpL4U8rLKemX1yGLhDgUto=
