@@ -1,7 +1,8 @@
 package models
 
-type Person struct {
-    Name string `bson:"name" json:"name"`
-    Age  int    `bson:"age" json:"age"`
-    City string `bson:"city" json:"city"`
+type user struct {
+	FirstName string `bson:"first_name" json:"first_name"`
+	LastName  string `bson:"last_name" json:"last_name"`
+	Email     string `bson:"email" json:"email"`
+	Phone     string `bson:"phone" json:"phone"`
 }

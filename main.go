@@ -1,9 +1,8 @@
 package main
 
 import (
-    "gofr.dev/pkg/gofr"
-    "myapp/config"
-    "myapp/handlers"
+	"github.com/Parth-11/Athelia-Backend/db"
+	"gofr.dev/pkg/gofr"
 )
 
 func main() {
@@ -11,8 +10,9 @@ func main() {
 
     config.SetupMongo(app)
 
-    app.POST("/users", handlers.Insert)
-    app.GET("/users", handlers.Get)
+	mongoClient := db.InitMongoStore()
+
+	app.AddMongo(mongoClient)
 
     app.Run()
 }
