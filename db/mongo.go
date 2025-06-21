@@ -5,6 +5,7 @@ import (
 	"sync"
 
 	"github.com/Parth-11/Athelia-Backend/configs"
+	"gofr.dev/pkg/gofr"
 	"gofr.dev/pkg/gofr/datasource/mongo"
 )
 
@@ -27,4 +28,10 @@ func InitMongoStore() *mongo.Client {
 	})
 
 	return mongoStore
+}
+
+func Close(ctx gofr.Context) {
+	if mongoStore != nil {
+		mongoStore.Client().Disconnect(ctx)
+	}
 }
