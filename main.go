@@ -1,18 +1,18 @@
 package main
 
 import (
-	"gofr.dev/pkg/gofr"
-	"gofr.dev/pkg/gofr/datasource/mongo"
+    "gofr.dev/pkg/gofr"
+    "myapp/config"
+    "myapp/handlers"
 )
 
 func main() {
-	app := gofr.New()
+    app := gofr.New()
 
-	app.GET("/greet", func(context *gofr.Context) (any, error) { return "Hello World!", nil })
+    config.SetupMongo(app)
 
-	db := mongo.New(mongo.Config{})
+    app.POST("/users", handlers.Insert)
+    app.GET("/users", handlers.Get)
 
-	app.AddMongo(db)
-
-	app.Run()
+    app.Run()
 }

@@ -1,4 +1,4 @@
-module github.com/Parth-11/Athelia-Backend
+module myapp
 
 go 1.24
 
