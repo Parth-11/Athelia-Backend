@@ -5,17 +5,14 @@
 .
 ├── LICENSE
 ├── README.md
-├── config.go
+├── main.go
 ├── go.mod
 ├── go.sum
-├── clientlib/
-│   ├── lib.go
-│   └── lib_test.go
-├── cmd/
-│   ├── modlib-client/
-│   │   └── main.go
-│   └── modlib-server/
-│       └── main.go
+├── configs/
+│   ├── .env
+│   └── configs.go
+├── db/
+│   └── db.go
 ├── internal/
 │   └── auth/
 │       ├── auth.go
