@@ -13,10 +13,10 @@
 │   └── configs.go
 ├── db/
 │   └── db.go
-├── internal/
-│   └── auth/
-│       ├── auth.go
-│       └── auth_test.go
-└── serverlib/
-    └── lib.go
+├── handler/
+│   └── handler.go
+├── models/
+│   └── models.go
+└── routes/
+    └── routes.go
 ```
