@@ -5,6 +5,7 @@ go 1.24
 toolchain go1.24.3
 
 require (
+	github.com/gofrs/uuid/v5 v5.3.2
 	go.mongodb.org/mongo-driver v1.17.3
 	gofr.dev v1.40.0
 	gofr.dev/pkg/gofr/datasource/mongo v0.4.0
